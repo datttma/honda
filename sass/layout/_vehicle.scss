@@ -5,4 +5,45 @@
             font-size: 3rem;
         }
     }
+    .vehicle__tab{
+        justify-content: center;
+        border: none;
+        li{
+            padding: 0 20px;
+            a.active{
+                border: none;
+                color: $color-blue-1;
+                border-bottom: 4px solid $color-blue-1;
+                &:hover{
+                    border-bottom: 4px solid $color-blue-1;
+                  color: $color-blue-1;
+                }
+            }
+            a{
+                color: $color-blue-2;
+                font-weight: bold;
+                border: none;
+                font-size: 1.1rem;
+                padding: 0;
+                &:hover{
+                    border: none;
+                  color: $color-blue-1;
+                }
+            }
+        }
+    }
+    .vehicle__box{
+        .item{
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .vehicle_1{
+            background-image: url(../img/home-car-1.jpg);
+        }
+        .vehicle_2{
+            background-image: url(../img/home-car-2.jpg);
+        }
+    }
 }

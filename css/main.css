@@ -659,6 +659,54 @@ footer .cookies a {
   font-size: 3rem;
 }
 
+.vehicle .vehicle__tab {
+  justify-content: center;
+  border: none;
+}
+
+.vehicle .vehicle__tab li {
+  padding: 0 20px;
+}
+
+.vehicle .vehicle__tab li a.active {
+  border: none;
+  color: #007cc0;
+  border-bottom: 4px solid #007cc0;
+}
+
+.vehicle .vehicle__tab li a.active:hover {
+  border-bottom: 4px solid #007cc0;
+  color: #007cc0;
+}
+
+.vehicle .vehicle__tab li a {
+  color: #00324f;
+  font-weight: bold;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.vehicle .vehicle__tab li a:hover {
+  border: none;
+  color: #007cc0;
+}
+
+.vehicle .vehicle__box .item {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vehicle .vehicle__box .vehicle_1 {
+  background-image: url(../img/home-car-1.jpg);
+}
+
+.vehicle .vehicle__box .vehicle_2 {
+  background-image: url(../img/home-car-2.jpg);
+}
+
 .btn__footer {
   font-weight: bold;
   color: #007cc0;
