@@ -1,0 +1,80 @@
+// @mixin styleText($color,$fz,$fw){
+//     color:$color ;
+//     font-size: $fz;
+//     font-weight: $fw;
+// }
+// @mixin styleButton($bg-color,$border,$pd-y,$pd-x,$border-rad) {
+//     background-color: $bg-color;
+//     border: 1px solid $border;
+//     padding:$pd-y $pd-x ;
+//     border-radius: $border-rad;
+// }
+// @mixin hoverButton($bg-hover,$bd-hover,$color-hover) {
+//     background-color:$bg-hover ;
+//     border-color:$bd-hover ;
+//     color: $color-hover;
+// }
+// @mixin styleFormSearch($bg-color,$bd-color-focus){
+//      .input-group{
+//                 background-color: $bg-color;
+//                 border: 1px solid $bg-color;
+//                 .form-control{
+//                     background-color: $color-trans;
+//                     border-color:transparent;
+//                     transition: none;
+//                     &:focus{
+//                         background-color: $color-white-0;
+//                         border-color: $bd-color-focus;
+//                         border-right-color: transparent;
+//                         box-shadow: none;
+//                     }
+//                     &:focus + .input-group-append{
+//                             .input-group-text{
+//                             background-color: $color-white-0;
+//                             border-color:$bd-color-focus;
+//                             border-left-color:transparent ;
+//                             &:hover{
+//                                 background-color: $color-red-0;
+//                                 color: $color-white-0;
+                                
+//                     }
+//                        }
+//                     }
+//                 }
+//                 .input-group-text{
+//                     background-color: transparent;
+//                     color: $color-red-0;
+//                     border-color: transparent;
+//                     border-radius: 0;
+//                      &:hover{
+//                         background-color: $color-red-0;
+//                         color: $color-white-0;
+//                     }
+//                 }
+//             }
+// }
+
+// @mixin responsive($screen){
+//     // map là tên mà mình khai báo bên variable, tên biến á
+//     // $key: là cái mfnh truyền vào
+//     @if map-has-key($map:$breakpoints , $key:$screen){
+//         // lay ra gia trị của breakpoint
+//         $value:map-get($map:$breakpoints , $key:$screen );
+//         @media screen and(max-width:$value) {
+//             @content;
+//             // @content sẽ là code mà mình viết cho respon
+//         }
+//     }
+//     @else{
+//         @warn "Nhap lai";
+//     }
+// }
+@mixin styleButton($bg-color,$color,$color-border) {
+    font-weight: bold;
+    color: $color;
+    background-color: $bg-color;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 1.95rem;
+    border: 2px solid $color-border;
+    }

@@ -1,0 +1,52 @@
+.btn__footer{
+    @include styleButton($color-white-0,$color-blue-1,$color-blue-1);
+     &:hover{
+        text-decoration: none;
+        background-color: $color-blue-1;
+        color: $color-white-0;
+     }
+ }
+ .btn__slider{
+     @include styleButton(red,$color-white-0,$color-white-0);
+     &:hover{
+        text-decoration: none;
+        background-color: $color-white-0;
+        color: red;
+     }
+ }
+ .btn__sevice{
+    @include styleButton($color-blue-1,$color-white-0,$color-blue-1);
+    padding: 5px 30px;
+    &:hover{
+        text-decoration: none;
+        background-color: $color-white-0;
+        color:$color-blue-1;
+    }
+ }
+ .btn__shop,.btn__discover{
+     @include styleButton($color-blue-1,$color-white-0,$color-blue-1);
+     padding: 10px 20px;
+     &:hover{
+        text-decoration: none;
+        background-color: transparent;
+        color:$color-blue-1;
+    }
+ }
+ .btn__discover__more{
+    @include styleButton(red,$color-white-0,red);
+    padding: 10px 20px;
+    &:hover{
+       text-decoration: none;
+       background-color: transparent;
+       color:red;
+   }
+ }
+ .btn__price{
+    @include styleButton($color-blue-1,$color-white-0,$color-white-0);
+    &:hover{
+      text-decoration: none;
+      background-color: $color-white-0;
+      color:$color-blue-1;
+      border: 2px solid $color-blue-1;
+  }
+ }

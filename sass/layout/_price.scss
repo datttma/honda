@@ -1,0 +1,45 @@
+.price {
+    background-color: $color-blue-2;
+    .price__content {
+        padding: 0 50px;
+        position: relative;
+        .price__item {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+        }
+        .price__left {
+            background-image: url(../img/home-banner-1.jpg);
+           .content__left{
+            position: absolute;
+            text-align: center;
+            left: 0;
+            bottom: 2%;
+           width: 100%;
+            h4{
+                color: white;
+            }
+           }
+         
+        }
+       .price__right{
+        background-image: url(../img/home-banner-2.jpg);
+        .content__right{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 0 40px;
+            p{
+                background-color: #0171B1;;
+                display: inline-block;
+                font-weight: bold;
+                padding: 0 5px;
+            }
+        }
+       }
+    }
+}
