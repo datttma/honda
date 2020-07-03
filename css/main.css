@@ -15,6 +15,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+header {
+  overflow: hidden;
+}
+
 header .header {
   background-color: #007cc0;
   width: 100%;
@@ -651,6 +655,61 @@ footer .cookies a {
   padding: 0 5px;
 }
 
+.vehicle {
+  position: relative;
+  margin-top: 50px;
+}
+
+.vehicle .owl-nav {
+  margin: 0;
+  text-align: center;
+}
+
+.vehicle .owl-nav button.owl-prev, .vehicle .owl-nav button.owl-next {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 20px 20px 20px !important;
+  text-align: center;
+}
+
+.vehicle .owl-nav button.owl-prev:focus, .vehicle .owl-nav button.owl-next:focus {
+  outline: none;
+}
+
+.vehicle .owl-nav button.owl-prev span, .vehicle .owl-nav button.owl-next span {
+  width: 50% !important;
+  color: #00324f;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.vehicle .owl-nav button.owl-prev {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.vehicle .owl-nav button.owl-next {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.vehicle .owl-dots {
+  background: #00324f;
+}
+
+.vehicle .owl-dots .owl-dot.active span {
+  background-color: #007cc0;
+}
+
+.vehicle .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
 .vehicle .vehicle__top {
   text-align: center;
 }
@@ -697,6 +756,45 @@ footer .cookies a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.vehicle .vehicle__box .item .vehicle__content {
+  padding: 70px;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+
+.vehicle .vehicle__box .item .vehicle__content svg {
+  height: 40px;
+}
+
+.vehicle .vehicle__box .item .vehicle__content p {
+  color: white;
+  line-height: 1rem;
+  margin: 10px 0;
+}
+
+.vehicle .vehicle__box .item .vehicle__content .stats {
+  display: flex;
+}
+
+.vehicle .vehicle__box .item .vehicle__content .stats .stats__item p {
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 50px;
+}
+
+.vehicle .vehicle__box .item .vehicle__content .stats .stats__item h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.vehicle .vehicle__box .item .vehicle__content .vehicel__button {
+  margin: 10px 0;
 }
 
 .vehicle .vehicle__box .vehicle_1 {
@@ -705,6 +803,46 @@ footer .cookies a {
 
 .vehicle .vehicle__box .vehicle_2 {
   background-image: url(../img/home-car-2.jpg);
+}
+
+.vehicle .vehicle__box .vehicle_3 {
+  background-image: url(../img/home-car-3.jpg);
+}
+
+.vehicle .vehicle__box .suv_1 {
+  background-image: url(../img/suv-1.jpg);
+}
+
+.vehicle .vehicle__box .suv_2 {
+  background-image: url(../img/suv-2.jpg);
+}
+
+.vehicle .vehicle__box .suv_3 {
+  background-image: url(../img/suv-3.jpg);
+}
+
+.vehicle .vehicle__box .van_1 {
+  background-image: url(../img/van-1.jpg);
+}
+
+.vehicle .vehicle__box .van_2 {
+  background-image: url(../img/van-2.jpg);
+}
+
+.vehicle .vehicle__box .elec_1 {
+  background-image: url(../img/elec-1.jpg);
+}
+
+.vehicle .vehicle__box .elec_2 {
+  background-image: url(../img/elec-2.jpg);
+}
+
+.vehicle .vehicle__box .pre_1 {
+  background-image: url(../img/pre-1.jpg);
+}
+
+.vehicle .vehicle__box .fu_1 {
+  background-image: url(../img/fu-1.jpg);
 }
 
 .btn__footer {
@@ -805,5 +943,37 @@ footer .cookies a {
   background-color: #fff;
   color: #007cc0;
   border: 2px solid #007cc0;
+}
+
+.btn__vehicle_1 {
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 1.95rem;
+  border: 2px solid #fff;
+}
+
+.btn__vehicle_1:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: red;
+}
+
+.btn__vehicle_2 {
+  font-weight: bold;
+  color: red;
+  background-color: #fff;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 1.95rem;
+  border: 2px solid red;
+}
+
+.btn__vehicle_2:hover {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

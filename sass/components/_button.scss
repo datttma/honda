@@ -50,3 +50,19 @@
       border: 2px solid $color-blue-1;
   }
  }
+ .btn__vehicle_1{
+   @include styleButton(red,$color-white-0,$color-white-0);
+   &:hover{
+      text-decoration: none;
+      background-color: $color-white-0;
+      color: red;
+   }
+ }
+ .btn__vehicle_2{
+   @include styleButton($color-white-0,red,red);
+   &:hover{
+      text-decoration: none;
+      background-color: red;
+      color: $color-white-0;
+   }
+ }

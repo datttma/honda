@@ -1,4 +1,51 @@
 .vehicle{
+    position: relative;
+    margin-top: 50px;
+    .owl-nav{
+        margin: 0;
+        text-align: center;
+        button.owl-prev, button.owl-next{
+            background: hsla(0,0%,100%,.9);
+            padding: 20px 20px 20px 20px !important;
+            text-align: center;
+            &:focus{
+                outline: none;
+            }
+            span{
+                width: 50%!important;
+                color: $color-blue-2;
+                font-weight: bold;
+                font-size:2.5rem;
+             
+            }
+        }
+        button.owl-prev{
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            position: absolute;
+            top: 40%;
+            left: 0;
+        }
+        button.owl-next{
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            position: absolute;
+            top: 40%;
+            right: 0;
+        }
+    }
+    .owl-dots{
+        background: $color-blue-2;
+        .owl-dot.active span{
+            background-color: $color-blue-1;
+        }
+        .owl-dot{
+           
+            &:focus{
+                outline: none;
+            }
+        }
+    }
     .vehicle__top{
         text-align: center;
         h2{
@@ -38,12 +85,76 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
+            .vehicle__content{
+                padding: 70px;
+                width: 30%;
+                position: absolute;
+                left: 0;
+                bottom: 10%;
+                svg{
+                    height: 40px;
+                }
+                p{
+                    color: white;
+                    line-height: 1rem;
+                    margin: 10px 0;
+                }
+                .stats{
+                    display: flex;
+                    .stats__item{
+                        p{
+                            color: white;
+                            font-size: 2.5rem;
+                            margin-right: 50px;
+                        }
+                        h3{
+                            font-size: 1rem;
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .vehicel__button{
+                    margin: 10px 0;
+                }
+            }
         }
         .vehicle_1{
             background-image: url(../img/home-car-1.jpg);
         }
         .vehicle_2{
             background-image: url(../img/home-car-2.jpg);
+        }
+        .vehicle_3{
+            background-image: url(../img/home-car-3.jpg);
+        }
+        .suv_1{
+            background-image: url(../img/suv-1.jpg);
+        }
+        .suv_2{
+            background-image: url(../img/suv-2.jpg);
+        }
+        .suv_3{
+            background-image: url(../img/suv-3.jpg);
+        }
+        .van_1{
+            background-image: url(../img/van-1.jpg);
+        }
+        .van_2{
+            background-image: url(../img/van-2.jpg);
+        }
+        .elec_1{
+            background-image: url(../img/elec-1.jpg);
+        }
+        .elec_2{
+            background-image: url(../img/elec-2.jpg);
+        }
+        .pre_1{
+            background-image: url(../img/pre-1.jpg);
+        }
+        .fu_1{
+            background-image: url(../img/fu-1.jpg);
         }
     }
 }
